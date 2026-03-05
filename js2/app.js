@@ -37,5 +37,14 @@
 // let number = 20
 // let number2 = "40"
 
-// console.log(number > number2)
+// console.log(number > numb
 
+//  admin123
+
+
+// let code = prompt("ввидите пароль")
+
+
+// if (code="admin123"){
+// 	alert("кош келиниз")
+// }

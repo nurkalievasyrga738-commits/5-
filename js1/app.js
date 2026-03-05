@@ -2,7 +2,7 @@
 // let number2 = 40
 
 // console.log(number < number2)
-// = - ичине салып берет
+// // = - ичине салып берет
 
 // let = ach = "ыы"
 // let  nul 
@@ -10,35 +10,123 @@
 // let  cookie = false;
 // let  user = null
 // let sym = Symbol("Id") 
+// const biggy = 9997000254740991n
+
 
 
 // console.log(typeof number) 
 // console.log(typeof ach)
 // console.log(typeof nul )
-// console.log(typeof bi)
+// console.log(typeof biggy)
 // console.log(typeof cookie)
 // console.log(typeof user)
 // console.log(typeof sym)
+// console.log(""); 
 
-const newName = prompt("Атынды жаз")
 
-console.log(newName)
+// const newName = prompt("Атынды жаз")
 
-const newlastName = prompt("Фамилия")
+// console.log(newName)
 
-console.log(newlastName)
+// const newlastName = prompt("Фамилия")
 
-const newMovi = prompt("Любимый мульт")
+// console.log(newlastName)
 
-console.log(newMovi)
+// const newMovi = prompt("Любимый мульт")
 
-const newInfo = prompt("Ысык-Колду кайсы тоолор курчайт")
+// console.log(newMovi)
 
-console.log(newInfo)
+// const newInfo = prompt("Ысык-Колду кайсы тоолор курчайт")
 
-const newInfo2 = prompt("Чуй облустун эн бийик чокусу жана чокунун саны")
+// console.log(newInfo)
 
-console.log(newInfo2)
+// const newInfo2 = prompt("Чуй облустун эн бийик чокусу жана чокунун саны")
+
+// console.log(newInfo2)
+// let code = prompt("ввидите пароль")
+
+
+// if (code==="admin123"){
+// 	alert("кош келиниз")
+// }else{
+// 	alert("неверный пароль")
+// }
+
+// оператор сравнение
+// > - больше, < - меньше,>= - больше или ровно, === - строго ровно, !== - не ровно
+
+// легические оператор
+// and - &&
+// let age = "30"
+// let city = "Bishkek"
+
+// if(age > 18 && city === "Bishkek"){
+// 	console.log("это наш клиент")
+// }
+
+// let login = "admin"
+// let password = "admin123"
+
+// let password = prompt("ввидите пароль")
+// let login = prompt("ввидте логин")
+
+// if (login === "admin" && password === "admin123"){
+// 	alert ("привет админ")
+// }else if (login === "teacher" && password === "teacher123"){
+// 	alert ("Привет учитель!")
+// } else if(login === "student" && password === "student123"
+// )
+// {
+// 	alert("привет студент")
+// }else{
+// 	alert(" Нет в системе")
+// }
+
+//  let month = prompt("сан жаз")
+
+//  switch(month/2 ) {
+// 	case "2" :
+// 	alert("четн")
+// 	 break
+// 	 	default:
+// 	alert("нечет")
+// 	 break
+	 
+// 	}
+
+let login = prompt("ввидте возраст")
+
+
+if (login >=0 && login <= 12){
+	alert ("ребенок")
+}else if (login >=13 && login <= 17){
+	alert ("Подросток")
+} else if(login >=18 && login <= 60
+)
+{
+	alert("Взрослый")
+}else if(login > 60) {
+	alert("Пенсионер")
+}else{
+	alert("нет в системе")
+}
+	
+	
+// 	let age = prompt("жаш")
+	
+
+//  switch(0-12) {
+// 	case  :
+// 	alert("четн")
+// 	 break
+// 	 	default:
+// 	alert("нечет")
+// 	 break
+	 
+// 	}
+
+
+
 
 // типы данных 8
 // приметивные типы,ссылочные
