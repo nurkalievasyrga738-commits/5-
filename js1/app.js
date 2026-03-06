@@ -82,48 +82,66 @@
 // 	alert(" Нет в системе")
 // }
 
-//  let month = prompt("сан жаз")
-
-//  switch(month/2 ) {
-// 	case "2" :
-// 	alert("четн")
-// 	 break
-// 	 	default:
-// 	alert("нечет")
-// 	 break
-	 
-// 	}
-
-let login = prompt("ввидте возраст")
 
 
-if (login >=0 && login <= 12){
-	alert ("ребенок")
-}else if (login >=13 && login <= 17){
-	alert ("Подросток")
-} else if(login >=18 && login <= 60
-)
-{
-	alert("Взрослый")
-}else if(login > 60) {
-	alert("Пенсионер")
-}else{
-	alert("нет в системе")
-}
+
+let num = prompt("ввидите цыфру")
+
+	if(num % 2 ==0){
+		alert("четные")
+	}else{
+		alert("нечетные")
+	}
+
+
+
+
+
+
+// let newName = prompt("Атынды жаз")
+
+// let age = prompt("жашынды жаз")
+// let heite = prompt("Боюнду жаз")
+// if (age <= 18 ){
+// 	alert(newName+ " сен атракционго тушконго жашын жетпейт")
+// }else if(heite <=180 ){
+//  alert(newName+ " сен атракционго тушконго боюн жетпейт")
+// }else{
+// 	alert("Кош келдин!!!")
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let login = prompt("ввидте возраст")
+
+
+// if (login >=0 && login <= 12){
+// 	alert ("ребенок")
+// }els if (login >=13 && login <= 17){
+// 	alert ("Подросток")
+// } else if(login >=18 && login <= 60
+// )
+// {
+// 	alert("Взрослый")
+// }else if(login > 60) {
+// 	alert("Пенсионер")
+// }else{
+// 	alert("нет в системе")
+// }
+
 	
 	
-// 	let age = prompt("жаш")
-	
 
-//  switch(0-12) {
-// 	case  :
-// 	alert("четн")
-// 	 break
-// 	 	default:
-// 	alert("нечет")
-// 	 break
-	 
-// 	}
 
 
 
