@@ -127,7 +127,7 @@ let login = prompt("ввидте возраст")
 
 if (login >=0 && login <= 12){
 	alert ("ребенок")
-}els if (login >=13 && login <= 17){
+}else if (login >=13 && login <= 17){
 	alert ("Подросток")
 } else if(login >=18 && login <= 60
 )
