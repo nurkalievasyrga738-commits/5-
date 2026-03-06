@@ -85,13 +85,13 @@
 
 
 
-let num = prompt("ввидите цыфру")
+// let num = prompt("ввидите цыфру")
 
-	if(num % 2 ==0){
-		alert("четные")
-	}else{
-		alert("нечетные")
-	}
+// 	if(num % 2 ==0){
+// 		alert("четные")
+// 	}else{
+// 		alert("нечетные")
+// 	}
 
 
 
@@ -122,22 +122,22 @@ let num = prompt("ввидите цыфру")
 
 
 
-// let login = prompt("ввидте возраст")
+let login = prompt("ввидте возраст")
 
 
-// if (login >=0 && login <= 12){
-// 	alert ("ребенок")
-// }els if (login >=13 && login <= 17){
-// 	alert ("Подросток")
-// } else if(login >=18 && login <= 60
-// )
-// {
-// 	alert("Взрослый")
-// }else if(login > 60) {
-// 	alert("Пенсионер")
-// }else{
-// 	alert("нет в системе")
-// }
+if (login >=0 && login <= 12){
+	alert ("ребенок")
+}els if (login >=13 && login <= 17){
+	alert ("Подросток")
+} else if(login >=18 && login <= 60
+)
+{
+	alert("Взрослый")
+}else if(login > 60) {
+	alert("Пенсионер")
+}else{
+	alert("нет в системе")
+}
 
 	
 	
