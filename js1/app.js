@@ -122,35 +122,207 @@
 
 
 
-let login = prompt("ввидте возраст")
+// let login = prompt("ввидте возраст")
 
 
-if (login >=0 && login <= 12){
-	alert ("ребенок")
-}else if (login >=13 && login <= 17){
-	alert ("Подросток")
-} else if(login >=18 && login <= 60
-)
-{
-	alert("Взрослый")
-}else if(login > 60) {
-	alert("Пенсионер")
-}else{
-	alert("нет в системе")
+// if (login >=0 && login <= 12){
+// 	alert ("ребенок")
+// }else if (login >=13 && login <= 17){
+// 	alert ("Подросток")
+// } else if(login >=18 && login <= 60
+// )
+// {
+// 	alert("Взрослый")
+// }else if(login > 60) {
+// 	alert("Пенсионер")
+// }else{
+// 	alert("нет в системе")
+// }
+
+
+
+// for (let i = 5; i <=1; i--){
+// 	console.log(i)
+// }
+
+// for(let i =1; i<=10; i+-2){
+// 	console.log(i)
+// }
+
+// let number = 1
+
+// while(i <= 5){
+// 	console.log(number)
+// 	number++
+// }
+
+// let name = ""
+
+// while(name !== "doni"){
+// 	name = promt ("Неверное имя")
+// }
+
+// let pass = ""
+
+// while(pass !== "123"){
+// 	pass = promt ("Неверный пароль")
+// }
+
+
+// let age
+
+// while(true){
+// 	age = prompt("Введи свщй возраст")
+
+// 	if(age >=18){
+// 		alert("доступ разрешен")
+// 		break
+// 	}else{
+// 		alert("вы слишком молоды")
+// 	}
+// }
+
+// let num
+
+// while(true){
+// 	num = prompt("Введи число")
+
+// 	if(num ==3){
+// 		alert("вы угадали")
+// 		break
+// 	}else if( num >=3){
+// 		alert("слишком больщое")
+// 	}else if( num<=3){
+// 		alert("слишком маленькое")
+// 	}
+// }
+
+// let admin
+// let password
+// while (true) {
+// 	admin = prompt("Ввидите логин")
+// 	password = prompt("Ввидите пароль")
+
+// 	if (login === "admin" && password === "admin123") {
+// 		alert("добро пожаловать!!")
+// 		break
+// 	} else {
+// 		alert("неправильный")
+
+// 	}
+
+// }
+
+// let attemps = 3
+
+// while(attemps>0){
+// 	let login=prompt("ввидите логин")
+// 	let password=promt("ввидите пароль")
+
+// 	if(login === "admin"&& password==="admin123"){
+// 		alert("Добро пажеловат")
+// 		break
+// 	}else{
+// 		attemps--
+// 		alert("не верный пароль или логин. Осталос попыток:" +attemps)
+// 	}
+// }
+
+// if(attemps ===0){
+// 	alert("аккаунт заблокирован")
+// }
+// 100.000=25%
+// const product = promt("какой товар вы покупаете?")
+// const price = promt("цена за одну щтуку:")
+// const count = promt("количество товара:")
+
+// const total = price * count ;
+
+// if(count<=0,price<=0,isNaN(total)){
+// 	alert("ошыбка:ввидите корректнуб цену!")
+// }else if(total>=10000){
+// const finalprice = total * 0.8;
+// alert("Товар: " + product); 
+
+// alert("Ваша скидка 20%! к оплате:" + finalPrice +"руб.");
+
+// alert("Поздравляем! Вы получили купон на следующую покупку!");
+// }else if (total >= 5000) {
+// const finalprice= total* 0.9;
+
+// alert("Товар: " + product);
+
+// alert("Ваша скидка 10%! к оплате:" + finalPrice + " руб.");
+// }else{
+// alert("Товар: " + product);
+// alert("Скидок нет. к оплате: " + total + "руб.");
+// }
+
+const name = prompt("Введите имя студента:");
+
+const grdm = Number(prompt("Оценка по математике (0-100):"));
+const grdl = Number(prompt("Оценка по языкам (0-100):"));
+const grdp = Number(prompt("Оценка по программированию (0-100):"));
+
+const miss = Number(prompt("Количество пропусков:"));
+
+let fail = false;
+
+if (grdm <= 60) {
+  fail = true;
 }
 
-	
-	
+if (grdl <= 60) {
+  fail = true;
+}
+
+if (grdp <= 60) {
+  fail = true;
+}
+
+if (miss > 3) {
+  fail = true;
+}
+
+if (fail) {
+  alert("Простите, " + name + ", но вы не сдали сессию.");
+} else {
+  alert("Поздравляем, " + name + "! Вы сдали сессию.");
+}
 
 
 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// for(let i = 1; i <= 5; i++){
+// 	if(i==2){
+// 		continue
+// 	}
+// 	console.log(i)
+// }
 
 
 // типы данных 8
 // приметивные типы,ссылочные
 // 7 примет, 1 ссылочные
 
-// 
+//
 // string - "",
 // number - 1,2,3,4,5,6,7..
 // Boolean - false, true
