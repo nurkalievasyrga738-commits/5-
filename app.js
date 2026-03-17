@@ -307,31 +307,31 @@
 // 	alert("у вас масса тело идеалное!!")
 // }
 // }
-function calculateBMI(weight, height) {
-  return weight / (height * height);
-}
+// function calculateBMI(weight, height) {
+//   return weight / (height * height);
+// }
 
-function showResult(bmi) {
-  if (bmi < 18.5) {
-    alert("У вас недостаточный вес. Ваш масса тело: " + bmi.toFixed(1));
-  } else if (bmi >= 18.5 && bmi <= 24.9) {
-    alert("У вас нормальный вес  масса тело: " + bmi.toFixed(1));
-  } else if (bmi >= 25 && bmi <= 29.9) {
-    alert("У вас избыточный вес. масса тела: " + bmi.toFixed(1));
-  } else {
-    alert("У вас ожирение. Масса тело: " + bmi .toFixed(1));
-  }
-}
-
-
-const weight = Number(prompt("Введите вес (кг):"));
-const height = Number(prompt("Введите рост (метры, например 1.7):"));
+// function showResult(bmi) {
+//   if (bmi < 18.5) {
+//     alert("У вас недостаточный вес. Ваш масса тело: " + bmi.toFixed(1));
+//   } else if (bmi >= 18.5 && bmi <= 24.9) {
+//     alert("У вас нормальный вес  масса тело: " + bmi.toFixed(1));
+//   } else if (bmi >= 25 && bmi <= 29.9) {
+//     alert("У вас избыточный вес. масса тела: " + bmi.toFixed(1));
+//   } else {
+//     alert("У вас ожирение. Масса тело: " + bmi .toFixed(1));
+//   }
+// }
 
 
-const bmi = calculateBMI(weight, height);
+// const weight = Number(prompt("Введите вес (кг):"));
+// const height = Number(prompt("Введите рост (метры, например 1.7):"));
 
 
-showResult(bmi);
+// const bmi = calculateBMI(weight, height);
+
+
+// showResult(bmi);
 
 
 // const name2 = promt ("ввидите ваше имя:")
@@ -339,6 +339,63 @@ showResult(bmi);
 // const heit = promt("Какой у вас рост?")
 
 // alert("Привет"+name2)
+
+function start() {
+  const budget = Number(prompt("Введи свой бюджет (рубл):"));
+
+  if (budget <= 0) {
+    alert("Неверный бюджет!");
+    return;
+  }
+
+  const choice = prompt(
+    "Выбери действие:\n1 - Конвертация в валюты\n2 - Пороверить товара"
+  );
+
+  // ===== 1 ВАРИАНТ: КОНВЕРТАЦИЯ =====
+  if (choice === "1") {
+    const currency = prompt("В какую валюту?(\nUSD или \nEUR)");
+
+    // Пример курса (можешь менять)
+    const usdRate = 89; 
+    const eurRate = 97;
+
+    if (currency === "USD") {
+      const usd = budget / usdRate;
+      alert("Ваш баланс: " + usd.toFixed(2) + " долларов ");
+    } else if (currency === "EUR") {
+      const eur = budget / eurRate;
+      alert("Ваш баланс: " + eur.toFixed(2) + " евро ");
+    } else {
+      alert("Неверный выбор!");
+    }
+  }
+
+  // ===== 2 ВАРИАНТ: ПОКУПКА =====
+  else if (choice === "2") {
+    const price = Number(prompt("Сколько стоит желаемый товар:"));
+
+    if (price <= 0) {
+      alert("Неверная цена!");
+      return;
+    }
+
+    if (budget >= price) {
+      const rest = budget - price;
+      alert("Ура! Денег хватает.  Осталось: " + rest + " сом");
+    } else {
+      const need = price - budget;
+      alert("К сожелению не хватает  Нужно еще: " + need + " сом");
+    }
+  }
+
+  else {
+    alert("Ты выбрал не тот вариант ");
+  }
+}
+
+start();
+
 
 // const task = ['мен',"кором","жакшы","Кыргыстан","сени"]
 // console.log(task[3],task[0],task[4],task[2],task[1])
