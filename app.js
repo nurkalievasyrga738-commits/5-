@@ -258,37 +258,135 @@
 // alert("Скидок нет. к оплате: " + total + "руб.");
 // }
 
-const name = prompt("Введите имя студента:");
 
-const grdm = Number(prompt("Оценка по математике (0-100):"));
-const grdl = Number(prompt("Оценка по языкам (0-100):"));
-const grdp = Number(prompt("Оценка по программированию (0-100):"));
+// const name = prompt("Введите имя студента:");
 
-const miss = Number(prompt("Количество пропусков:"));
+// const grdm = Number(prompt("Оценка по математике (0-100):"));
+// const grdl = Number(prompt("Оценка по языкам (0-100):"));
+// const grdp = Number(prompt("Оценка по программированию (0-100):"));
 
-let fail = false;
+// const miss = Number(prompt("Количество пропусков:"));
 
-if (grdm <= 60) {
-  fail = true;
+// let bonus = 0;
+
+// if (miss === 0) {
+//   bonus = 5;
+//   alert("Бонус +5 баллов за идеальную посещаемость!");
+// }
+
+// const total = (grdm + grdl + grdp) / 3 + bonus;
+
+// if (total >= 80) {
+//   alert("Поздравляем, " + name + "! Вы сдали сессию. Средний балл: " + total);
+// } 
+// else if (total >= 60) {
+//   alert("Обычная стипендия одобрена. Ваш балл: " + total);
+// } 
+// else {
+//   alert("Простите, " + name + ", но вы не сдали сессию. Средний балл: " + total);
+// }
+
+// function sup(){
+// 	const total = kg/(heit*heit)
+// 	return total
+// }
+// sup()
+
+// function askKg(){
+// 	alert("у вас не достадочна веса.Ваша масса тело:" + total)
+// }
+// function askheit(){
+// 	alert("у вас ожиренние.Ваша масса тело:"+total)
+// }
+// function sup2(){
+// 	if(total<=29.9){
+// 	askheit()
+// }else if(total>=18.5){
+// 	askKg()
+// }else{
+// 	alert("у вас масса тело идеалное!!")
+// }
+// }
+function calculateBMI(weight, height) {
+  return weight / (height * height);
 }
 
-if (grdl <= 60) {
-  fail = true;
+function showResult(bmi) {
+  if (bmi < 18.5) {
+    alert("У вас недостаточный вес. Ваш масса тело: " + bmi.toFixed(1));
+  } else if (bmi >= 18.5 && bmi <= 24.9) {
+    alert("У вас нормальный вес  масса тело: " + bmi.toFixed(1));
+  } else if (bmi >= 25 && bmi <= 29.9) {
+    alert("У вас избыточный вес. масса тела: " + bmi.toFixed(1));
+  } else {
+    alert("У вас ожирение. Масса тело: " + bmi .toFixed(1));
+  }
 }
 
-if (grdp <= 60) {
-  fail = true;
-}
 
-if (miss > 3) {
-  fail = true;
-}
+const weight = Number(prompt("Введите вес (кг):"));
+const height = Number(prompt("Введите рост (метры, например 1.7):"));
 
-if (fail) {
-  alert("Простите, " + name + ", но вы не сдали сессию.");
-} else {
-  alert("Поздравляем, " + name + "! Вы сдали сессию.");
-}
+
+const bmi = calculateBMI(weight, height);
+
+
+showResult(bmi);
+
+
+// const name2 = promt ("ввидите ваше имя:")
+// const kg = promt ("Cколько вы весите?")
+// const heit = promt("Какой у вас рост?")
+
+// alert("Привет"+name2)
+
+// const task = ['мен',"кором","жакшы","Кыргыстан","сени"]
+// console.log(task[3],task[0],task[4],task[2],task[1])
+
+// let tasc2={
+// 	name:"Kurdustan",
+// 	oblacst:7,
+// 	borbor:"Bishkek",
+// 	naselenie:"7млн",
+// 	raion:["Сверловский","Алемединский","Ленининский",{per:"Первомайский"}]
+// }
+
+// tasc2.push=(tasc2[0],gi[0],gi[1],tasc2[1],gi[2])
+// console.log(tasc2[0],gi[0],gi[1],tasc2[1],gi[2])
+
+// console.log(tasc2.name, );
+
+// let newF = prompt("Жаны жемиш кош")
+
+// let fruts =["Anlma","banan","juzum"]
+// fruts.push(newF)
+
+// console.log(fruts)
+
+// if (grdm <= 60) {
+//   fail = true;
+// }
+
+// if (grdl <= 60) {
+//   fail = true;
+// }
+
+// if (grdp <= 60) {
+//   fail = true;
+// }
+
+// if (miss > 3) {
+//   fail = true;
+// }
+
+
+
+
+// if (total<=60) {
+//   alert("Простите, " + name + ", но вы не сдали сессию.");
+// } else {
+//   alert("Поздравляем, " + name + "! Вы сдали сессию. Ваш средний балл поздравляю");
+// }
 
 
 
